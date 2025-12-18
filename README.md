@@ -1,7 +1,5 @@
 ## Stews: Rebalanced
-Stews: Rebalanced replaces the old hunger bar system with a cooking mechanic and various well thought-out meals, each with it's own purpose. This encourages food diversity, and makes hunger an engaging (but not punishing) gameplay mechanic.
-
-![An image of cooking-related blocks. There is a cauldron placed on a campfire.](https://cdn.modrinth.com/data/cached_images/ea97c21fa744272841a55f507d1dfe6db8de2d26_0.webp)
+...is a Minecraft Datapack made using Beet and Bolt that replaces the old hunger bar system with a cooking mechanic and various well thought-out meals, each with it's own purpose. This encourages food diversity, and makes hunger an engaging (but not punishing) gameplay mechanic.
 
 Food now directly affects your health in various ways. Different meals will give different effects, such as directly healing you, or giving you a maximum health boost. **Different meals have different stats depending on the difficulty of obtaining them and how easy it is to farm**, thus making early-game foods distinct from late-game foods. This ensures you don't simply start a farm on day 1 and live off it for the rest of your life.
 
@@ -106,8 +104,6 @@ Crafted with a crafting table; same as vanilla recipe.
 _Temporarily increases max health to 6 hearts, lasts 20 mins_
 
 </details>
-
-![Image of the Apple Stew item](https://cdn.modrinth.com/data/cached_images/8e45aaec66449ffa02e96fbc162cc33cfab170e1.png)
 
 
 ---

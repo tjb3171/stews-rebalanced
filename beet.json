@@ -2,7 +2,7 @@
     "name": "Stews Rebalanced - by tjb3171",
     "description": "A datapack that adds a cooking system to rebalance hunger mechanics",
     "author": "tjb3171",
-    "version": "1.0",
+    "version": "1.1",
     "require": [
         "bolt"
     ],

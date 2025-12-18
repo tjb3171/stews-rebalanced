@@ -1,0 +1,11 @@
+these videos helped:
+https://www.youtube.com/watch?v=IOS-OnqE4GY (introduced me to bolt/beet)
+https://www.youtube.com/watch?v=2KCFojgBb_I (cauldron cooking mechanic)
+https://www.youtube.com/watch?v=gfl0zkXty3A (deleting recipes for items that cooking replaced)
+
+thanks mojang cause i took some stuff out of the vanilla datapack
+
+misode's generators helped a ton - thanks misode! - https://misode.github.io/
+mcstacker also helped - thanks to PyroStunts for making it! - https://mcstacker.net/
+
+made using beet and bolt (thanks to misode, rx-dev, valentin berlier) - https://mcbeet.dev/

@@ -1,0 +1,2 @@
+summon item ~ ~1 ~ {Item: {id: "suspicious_stew", count: 1, components: {lore: [[{text: "Heals a large amount of health", italic: false}]], item_name: [{text: "Nether Fungus Stew", italic: false}], food: {nutrition: 6, saturation: 2, can_always_eat: 1b}, consumable: {sound: "minecraft:entity.generic.drink", on_consume_effects: [{type: "apply_effects", effects: [{id: "instant_health", duration: 1, amplifier: 3, show_particles: 0b, show_icon: 0b}]}]}}}}
+function stews:cooking_complete

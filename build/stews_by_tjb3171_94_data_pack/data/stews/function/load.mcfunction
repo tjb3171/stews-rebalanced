@@ -1,0 +1,2 @@
+function stews:loop
+gamerule natural_health_regeneration false

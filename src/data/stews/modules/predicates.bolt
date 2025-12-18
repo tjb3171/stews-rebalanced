@@ -1,0 +1,100 @@
+predicate stews:drink_seafood {
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "minecraft:player"
+    },
+    "effects": {
+      "minecraft:luck": {
+        "amplifier": 186 # 186 specifically ensures that it got it from the seafood soup (because it gives level 186) to keep it compatible with other mods and datapacks that use the luck effect
+      }
+    }
+  }
+}
+
+predicate stews:in_water_cauldron {
+    "condition": "minecraft:entity_properties",
+    "block": "minecraft:cauldron",
+    "entity": "this",
+    "predicate": {
+        "type": "minecraft:item",
+        "location": {
+            "block": {
+                "blocks": "minecraft:water_cauldron"
+            }
+        }
+    }
+}
+
+predicate stews:not_in_water_cauldron {
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "location": {
+        "block": {
+          "blocks": "minecraft:water_cauldron"
+        }
+      }
+    }
+  }
+}
+
+predicate stews:on_heat_source {
+    "condition": "minecraft:location_check",
+    "offsetY": -1,
+    "predicate": {
+        "block": {
+            "blocks": "#stews:heat_source"
+        }
+    }
+}
+
+## VANILLA FOOD EDITING
+
+predicate stews:holding_bread {
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "minecraft:player"
+    },
+    "slots": {
+      "weapon.mainhand": {
+        "items": "minecraft:bread"
+      }
+    }
+  }
+}
+
+predicate stews:holding_pie {
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "minecraft:player"
+    },
+    "slots": {
+      "weapon.mainhand": {
+        "items": "minecraft:pumpkin_pie"
+      }
+    }
+  }
+}
+
+predicate stews:holding_cookie {
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "minecraft:player"
+    },
+    "slots": {
+      "weapon.mainhand": {
+        "items": "minecraft:cookie"
+      }
+    }
+  }
+}

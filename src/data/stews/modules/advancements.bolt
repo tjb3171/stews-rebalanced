@@ -1,0 +1,40 @@
+## VANILLA FOOD EATING DETECTION
+
+
+advancement stews:ate_pie {
+    "criteria": {
+        "eat_pie": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:pumpkin_pie"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "stews:eat_pie"
+    }
+}
+
+## CAULDRON RECIPE UNLOCK
+
+advancement stews:recipes/cauldron {
+    "criteria": {
+        "has_cobblestone": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:cobblestone"
+                    }
+                ]
+            },
+        "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "minecraft:cauldron"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+execute as @e[type=marker, tag=cookingmushroomstew] at @s run function stews:spawn_result/nested_execute_0
+execute as @e[type=marker, tag=cookingbeetrootsoup] at @s run function stews:spawn_result/nested_execute_1
+execute as @e[type=marker, tag=cookingrabbitstew] at @s run function stews:spawn_result/nested_execute_2
+execute as @e[type=marker, tag=cookingnetherstew] at @s run function stews:spawn_result/nested_execute_3
+execute as @e[type=marker, tag=cookingapplestew] at @s run function stews:spawn_result/nested_execute_4
+execute as @e[type=marker, tag=cookingseafoodsoup] at @s run function stews:spawn_result/nested_execute_5
+execute as @e[type=marker, tag=cookingporkstew] at @s run function stews:spawn_result/nested_execute_6
+execute as @e[type=marker, tag=cookingmelonsoup] at @s run function stews:spawn_result/nested_execute_7
+execute as @e[type=marker, tag=cookingcurry] at @s run function stews:spawn_result/nested_execute_8
+execute as @e[type=marker, tag=cookingmuttonstew] at @s run function stews:spawn_result/nested_execute_9

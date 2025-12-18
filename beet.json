@@ -2,7 +2,7 @@
     "name": "Stews - by tjb3171",
     "description": "A datapack that adds a cooking system to rebalance hunger mechanics",
     "author": "tjb3171",
-    "version": "94",
+    "version": "1.0",
     "require": [
         "bolt"
     ],
@@ -10,6 +10,8 @@
         "load": ["src"],
         "description": "🍖 §6§lStews§d -{ 1.21.6 to 1.21.10 }- §7by tjb3171",
         "pack_format": 94,
+        "min_format": [92, 0],
+        "max_format": [94, 1],
         "filter": {
             "block": [
                 {

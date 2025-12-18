@@ -122,7 +122,7 @@ Likely incompatible with mods or datapacks that add their own food items, howeve
 ### Modpacks / Crediting
 Feel free to use in any modpacks.
 
-Please don't reupload to other sites without proper credit and a link to this page.
+Please don't reupload to other sites without proper credit and a link to the modrinth page.
 
 ---
 ### Potential Future Additions

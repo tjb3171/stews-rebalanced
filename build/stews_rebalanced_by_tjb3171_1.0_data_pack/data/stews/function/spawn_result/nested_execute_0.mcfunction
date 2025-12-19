@@ -1,2 +1,0 @@
-summon item ~ ~1 ~ {Item: {id: "mushroom_stew", count: 1, components: {lore: [[{text: "Heals a small amount of health", italic: false}]], food: {saturation: 2, nutrition: 1, can_always_eat: 1b}, consumable: {sound: "minecraft:entity.generic.drink", on_consume_effects: [{type: "apply_effects", effects: [{id: "instant_health", duration: 1, amplifier: 1, show_particles: 0b, show_icon: 0b}]}]}}}}
-function stews:cooking_complete

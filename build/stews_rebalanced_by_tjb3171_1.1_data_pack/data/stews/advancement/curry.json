@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:blaze_powder"
+    },
+    "title": "Heated Debate",
+    "description": "Mix blaze powder with a baked potato, sweet berry, golden carrot, and chicken, and add a bowl to the cauldron"
+  },
+  "parent": "stews:nether_stew",
+  "criteria": {
+    "get_curry": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:rabbit_stew",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 1,
+                "saturation": 9,
+                "can_always_eat": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

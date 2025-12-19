@@ -1,6 +1,5 @@
 ## VANILLA FOOD EATING DETECTION
 
-
 advancement stews:ate_pie {
     "criteria": {
         "eat_pie": {
@@ -36,5 +35,425 @@ advancement stews:recipes/cauldron {
         "recipes": [
             "minecraft:cauldron"
         ]
+    }
+}
+
+## TUTORIAL ADVANCEMENTS
+
+advancement stews:root {
+    "display": {
+        "icon": {
+            "id": "minecraft:bread"
+        },
+        "title": "Cooking",
+        "description": "Cook some tasty meals",
+        "background": "minecraft:block/moss_block",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "get_cobble": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:cobblestone"
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:place_cauldron {
+    "display": {
+        "icon": {
+            "id": "minecraft:campfire"
+        },
+        "title": "Cooking with Coal",
+        "description": "Craft a cauldron with stone slabs and place it on top of a heat source"
+    },
+    "parent": "stews:root",
+    "criteria": {
+        "place_on_heat": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "offsetY": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": "#stews:heat_source"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:mushroom_stew {
+    "display": {
+        "icon": {
+            "id": "minecraft:mushroom_stew"
+        },
+        "title": "Super Mushroom",
+        "description": "Throw a bowl into a cauldron full of boiling water, and add one of both types of mushrooms"
+    },
+    "parent": "stews:place_cauldron",
+    "criteria": {
+        "get_mushroom_stew": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:mushroom_stew",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 1,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:apple_stew {
+    "display": {
+        "icon": {
+            "id": "minecraft:apple"
+        },
+        "title": "A Honey Bottle a Day Keeps The Dentist in Business",
+        "description": "Throw a bowl, an apple, and a honey bottle into a cauldron full of boiling water"
+    },
+    "parent": "stews:place_cauldron",
+    "criteria": {
+        "get_apple_stew": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:mushroom_stew",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 2,
+                                "saturation": 5,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:nether_stew {
+    "display": {
+        "icon": {
+            "id": "minecraft:warped_fungus"
+        },
+        "title": "Super Duper Mushroom",
+        "description": "Make a meal with one of both nether fungi and a glowberry (don't forget the bowl)"
+    },
+    "parent": "stews:mushroom_stew",
+    "criteria": {
+        "get_nether_stew": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:suspicious_stew",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 4,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:obtain_carrot {
+    "display": {
+        "icon": {
+            "id": "minecraft:carrot"
+        },
+        "title": "Someone's Nose",
+        "description": "Break a bush for a chance to find a carrot"
+    },
+    "parent": "stews:place_cauldron",
+    "criteria": {
+        "get_carrot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:carrot"
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:mutton_stew {
+    "display": {
+        "icon": {
+            "id": "minecraft:cooked_mutton"
+        },
+        "title": "Mary had a little lamb",
+        "description": "Mix cooked mutton, a carrot, a dandelion and a bowl in a boiling cauldron"
+    },
+    "parent": "stews:obtain_carrot",
+    "criteria": {
+        "get_mutton_stew": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:rabbit_stew",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 10,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:rabbit_stew {
+    "display": {
+        "icon": {
+            "id": "minecraft:rabbit_hide"
+        },
+        "title": "Extra Hearts",
+        "description": "Get cooked rabbit, a carrot, a baked potato, a mushroom and a bowl, and boil them together in a cauldron"
+    },
+    "parent": "stews:obtain_carrot",
+    "criteria": {
+        "get_rabbit_stew": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:rabbit_stew",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 3,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:pork_stew {
+    "display": {
+        "icon": {
+            "id": "minecraft:cooked_porkchop"
+        },
+        "title": "Health Boost",
+        "description": "Get cooked pork, a carrot, an apple, wheat and a bowl, and cook them in a cauldron"
+    },
+    "parent": "stews:obtain_carrot",
+    "criteria": {
+        "get_stew": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:rabbit_stew",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 7,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:melon_stew {
+    "display": {
+        "icon": {
+            "id": "minecraft:melon_slice"
+        },
+        "title": "Sweet and Stingy",
+        "description": "Boil a melon slice, a dandelion and a bowl together"
+    },
+    "parent": "stews:place_cauldron",
+    "criteria": {
+        "get_melon_stew": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:beetroot_soup",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 8,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:seafood {
+    "display": {
+        "icon": {
+            "id": "minecraft:salmon"
+        },
+        "title": "Exotic Dish",
+        "description": "Mix cooked cod, cooked salmon, dried kelp, sweet berries and a bowl in a boiling cauldron"
+    },
+    "parent": "stews:nether_stew",
+    "criteria": {
+        "get_seafood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:rabbit_stew",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 6,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:beetroot_soup {
+    "display": {
+        "icon": {
+            "id": "minecraft:beetroot"
+        },
+        "title": "Rapid Regen",
+        "description": "Put six beetroot and a bowl into a boiling cauldron"
+    },
+    "parent": "stews:place_cauldron",
+    "criteria": {
+        "get_soup": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:beetroot_soup",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 2,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:curry {
+    "display": {
+        "icon": {
+            "id": "minecraft:blaze_powder"
+        },
+        "title": "Heated Debate",
+        "description": "Mix blaze powder with a baked potato, sweet berry, golden carrot, and chicken, and add a bowl to the cauldron"
+    },
+    "parent": "stews:nether_stew",
+    "criteria": {
+        "get_curry": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:rabbit_stew",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 9,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
+advancement stews:hot_chocolate {
+    "display": {
+        "icon": {
+            "id": "minecraft:potion",
+            "components": {
+                "minecraft:potion_contents": {
+                    "custom_color": 10188866
+                }
+            }
+        },
+        "title": "Quality Hot Chocolate",
+        "description": "Boil together cocoa beans, sugar, a milk bucket, and a glass bottle."
+    },
+    "parent": "stews:place_cauldron",
+    "criteria": {
+        "get_hot_choc": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:potion",
+                        "components": {
+                            "minecraft:potion_contents": {
+                                "custom_color": 10188866,
+                                "custom_effects": [
+                                    {
+                                        "id": "minecraft:instant_health",
+                                        "duration": 1,
+                                        "show_particles": false,
+                                        "show_icon": false
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
     }
 }

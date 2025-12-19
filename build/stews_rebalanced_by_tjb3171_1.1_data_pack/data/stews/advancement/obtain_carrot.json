@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:carrot"
+    },
+    "title": "Someone's Nose",
+    "description": "Break a bush for a chance to find a carrot"
+  },
+  "parent": "stews:place_cauldron",
+  "criteria": {
+    "get_carrot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:carrot"
+          }
+        ]
+      }
+    }
+  }
+}

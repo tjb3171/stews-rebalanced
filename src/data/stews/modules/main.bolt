@@ -183,54 +183,54 @@ function stews:cook_bottle:
 function stews:spawn_result:
 
     execute as @e[type=marker, tag=cookingmushroomstew] at @s:
-        summon item ~ ~1 ~ {Item:{id:mushroom_stew,count:1,components:{lore:[[{"text":"Heals a small amount of health","italic":false}]],food:{saturation:2,nutrition:1,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:instant_health,duration:1,amplifier:1,show_particles:0b,show_icon:0b}]}]}}}}
+        summon item ~ ~1 ~ {Item:{id:mushroom_stew,count:1,components:{lore:[[{"text":"Heals a small amount of health","italic":false}]],food:{saturation:1,nutrition:1,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:instant_health,duration:1,amplifier:1,show_particles:0b,show_icon:0b}]}]}}}}
         
         function stews:cooking_complete
 
     execute as @e[type=marker, tag=cookingbeetrootsoup] at @s:
-        summon item ~ ~1 ~ {Item:{id:beetroot_soup,count:1,components:{lore:[[{"text":"Regenerates health rapidly","italic":false}],[{"text":"Lasts for 2 mins","italic":false,"color":"gray"}]],food:{nutrition:10,saturation:5,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:regeneration,duration:2400,amplifier:3,show_particles:0b,show_icon:0b}]}]}}}}
+        summon item ~ ~1 ~ {Item:{id:beetroot_soup,count:1,components:{lore:[[{"text":"Regenerates health rapidly","italic":false}],[{"text":"Lasts for 2 mins","italic":false,"color":"gray"}]],food:{nutrition:1,saturation:2,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:regeneration,duration:2400,amplifier:3,show_particles:0b,show_icon:0b}]}]}}}}
         
         function stews:cooking_complete
 
     execute as @e[type=marker, tag=cookingrabbitstew] at @s:
-        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Temporarily increases max health to 10 hearts","italic":false}],[{"text":"Lasts for 20 mins","italic":false,"color":"gray"}],[{"text":"Stacks up to 16","italic":false,"color":"gold"}]],max_stack_size:16,food:{nutrition:4,saturation:2,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:health_boost,duration:24000,amplifier:2,show_particles:0b,show_icon:0b},{id:regeneration,duration:200,amplifier:4,show_particles:0b,show_icon:0b}]}]}}}}
+        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Temporarily increases max health to 10 hearts","italic":false}],[{"text":"Lasts for 20 mins","italic":false,"color":"gray"}],[{"text":"Stacks up to 16","italic":false,"color":"gold"}]],max_stack_size:16,food:{nutrition:1,saturation:3,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:health_boost,duration:24000,amplifier:2,show_particles:0b,show_icon:0b},{id:regeneration,duration:200,amplifier:4,show_particles:0b,show_icon:0b}]}]}}}}
         
         function stews:cooking_complete
 
     execute as @e[type=marker, tag=cookingnetherstew] at @s:
-        summon item ~ ~1 ~ {Item:{id:suspicious_stew,count:1,components:{lore:[[{"text":"Heals a large amount of health","italic":false}]],item_name:[{"text":"Nether Fungus Stew","italic":false}],food:{nutrition:6,saturation:2,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:instant_health,duration:1,amplifier:3,show_particles:0b,show_icon:0b}]}]}}}}
+        summon item ~ ~1 ~ {Item:{id:suspicious_stew,count:1,components:{lore:[[{"text":"Heals a large amount of health","italic":false}]],item_name:[{"text":"Nether Fungus Stew","italic":false}],food:{nutrition:1,saturation:4,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:instant_health,duration:1,amplifier:3,show_particles:0b,show_icon:0b}]}]}}}}
 
         function stews:cooking_complete
 
     execute as @e[type=marker, tag=cookingapplestew] at @s:
-        summon item ~ ~1 ~ {Item:{id:mushroom_stew,count:1,components:{lore:[[{"text":"Heals a tiny amount of health","italic":false}]],item_name:[{"text":"Apple Stew","italic":false}],food:{nutrition:2,saturation:2,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:instant_health,duration:1,show_particles:0b,show_icon:0b}]}]}}}}
+        summon item ~ ~1 ~ {Item:{id:mushroom_stew,count:1,components:{lore:[[{"text":"Heals a tiny amount of health","italic":false}]],item_name:"Apple Stew",food:{nutrition:2,saturation:5,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:instant_health,duration:1,show_particles:0b,show_icon:0b}]}]}}}}
         summon item ~ ~1 ~ {Item:{id:glass_bottle,count:1}}
         
         function stews:cooking_complete
 
     execute as @e[type=marker, tag=cookingseafoodsoup] at @s:
         # 1 tick of luck effect to allow the drink seafood predicate to detect it. There's probably a better way of doing this with achievements or something but I dont know what I'm doing so this is what I've done.
-        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Cures poison and wither, and puts","italic":false}],[{"text":"you out if you're on fire.","italic":false}],[{"text":"Takes 0.2 seconds to consume","italic":false,"color":"gray"}],[{"text":"Stacks up to 16","italic":false,"color":"gold"}]],item_name:[{"text":"Seafood Soup","italic":false}],food:{nutrition:4,saturation:3,can_always_eat:1b},consumable:{consume_seconds:0.2,sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:remove_effects,effects:[wither,poison]},{type:apply_effects,effects:[{id:luck,duration:1,amplifier:186,show_particles:0b,show_icon:0b}]}]},max_stack_size:16,use_cooldown:{seconds:1}}}}
+        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Cures poison and wither, and puts","italic":false}],[{"text":"you out if you're on fire.","italic":false}],[{"text":"Takes 0.2 seconds to consume","italic":false,"color":"gray"}],[{"text":"Stacks up to 16","italic":false,"color":"gold"}]],item_name:[{"text":"Seafood Soup","italic":false}],food:{nutrition:1,saturation:6,can_always_eat:1b},consumable:{consume_seconds:0.2,sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:remove_effects,effects:[wither,poison]},{type:apply_effects,effects:[{id:luck,duration:1,amplifier:186,show_particles:0b,show_icon:0b}]}]},max_stack_size:16,use_cooldown:{seconds:1}}}}
         
         function stews:cooking_complete
 
     execute as @e[type=marker, tag=cookingporkstew] at @s:
-        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Temporarily increases max health to 8 hearts","italic":false}],[{"text":"Lasts 30 mins","italic":false,"color":"gray"}]],item_name:[{"text":"Pork Stew","italic":false}],food:{nutrition:5,saturation:3,can_always_eat:1b},consumable:{on_consume_effects:[{type:apply_effects,effects:[{id:health_boost,duration:36000,amplifier:1,show_particles:0b,show_icon:0b},{id:regeneration,duration:200,amplifier:4,show_particles:0b,show_icon:0b}]}]}}}}
+        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Temporarily increases max health to 8 hearts","italic":false}],[{"text":"Lasts 30 mins","italic":false,"color":"gray"}]],item_name:[{"text":"Pork Stew","italic":false}],food:{nutrition:1,saturation:7,can_always_eat:1b},consumable:{on_consume_effects:[{type:apply_effects,effects:[{id:health_boost,duration:36000,amplifier:1,show_particles:0b,show_icon:0b},{id:regeneration,duration:200,amplifier:4,show_particles:0b,show_icon:0b}]}]}}}}
         
         function stews:cooking_complete
 
     execute as @e[type=marker, tag=cookingmelonsoup] at @s:
-        summon item ~ ~1 ~ {Item:{id:beetroot_soup,count:1,components:{lore:[[{"text":"Temporarily increases max health to 8 hearts","italic":false}],[{"text":"Lasts 20 mins","italic":false,"color":"gray"}]],item_name:[{"text":"Melon Soup","italic":false}],food:{nutrition:2,saturation:2,can_always_eat:1b},consumable:{on_consume_effects:[{type:apply_effects,effects:[{id:health_boost,duration:36000,amplifier:1,show_particles:0b,show_icon:0b},{id:regeneration,duration:800,amplifier:4,show_particles:0b,show_icon:0b}]}]}}}}
+        summon item ~ ~1 ~ {Item:{id:beetroot_soup,count:1,components:{lore:[[{"text":"Temporarily increases max health to 8 hearts","italic":false}],[{"text":"Lasts 20 mins","italic":false,"color":"gray"}]],item_name:[{"text":"Melon Soup","italic":false}],food:{nutrition:1,saturation:8,can_always_eat:1b},consumable:{on_consume_effects:[{type:apply_effects,effects:[{id:health_boost,duration:36000,amplifier:1,show_particles:0b,show_icon:0b},{id:regeneration,duration:800,amplifier:4,show_particles:0b,show_icon:0b}]}]}}}}
         
         function stews:cooking_complete
 
     execute as @e[type=marker, tag=cookingcurry] at @s:
-        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Temporarily increases max health to 16 hearts","italic":false}],[{"text":"Lasts 15 min","italic":false,"color":"gray"}]],item_name:[{"text":"Blaze Curry","italic":false}],rarity:uncommon,enchantment_glint_override:true,food:{nutrition:2,saturation:2,can_always_eat:1b},consumable:{on_consume_effects:[{type:apply_effects,effects:[{id:health_boost,duration:18000,amplifier:5,show_particles:0b,show_icon:0b},{id:regeneration,duration:800,amplifier:4,show_particles:0b,show_icon:0b}]}]}}}}
+        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Temporarily increases max health to 16 hearts","italic":false}],[{"text":"Lasts 15 min","italic":false,"color":"gray"}]],item_name:[{"text":"Blaze Curry","italic":false}],rarity:uncommon,enchantment_glint_override:true,food:{nutrition:1,saturation:9,can_always_eat:1b},consumable:{on_consume_effects:[{type:apply_effects,effects:[{id:health_boost,duration:18000,amplifier:5,show_particles:0b,show_icon:0b},{id:regeneration,duration:800,amplifier:4,show_particles:0b,show_icon:0b}]}]}}}}
 
         function stews:cooking_complete
 
     execute as @e[type=marker, tag=cookingmuttonstew] at @s:
-        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Heals a tiny amount of health","italic":false}]],item_name:[{"text":"Mutton Stew","italic":false}],food:{nutrition:2,saturation:2,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:instant_health,duration:1,show_particles:0b,show_icon:0b}]}]}}}}
+        summon item ~ ~1 ~ {Item:{id:rabbit_stew,count:1,components:{lore:[[{"text":"Heals a tiny amount of health","italic":false}]],item_name:[{"text":"Mutton Stew","italic":false}],food:{nutrition:1,saturation:10,can_always_eat:1b},consumable:{sound:"minecraft:entity.generic.drink",on_consume_effects:[{type:apply_effects,effects:[{id:instant_health,duration:1,show_particles:0b,show_icon:0b}]}]}}}}
 
         function stews:cooking_complete
 
@@ -238,7 +238,7 @@ function stews:spawn_result:
 function stews:spawn_result_bottle:
 
     execute as @e[type=marker, tag=cookinghotchocolate] at @s:
-        summon item ~ ~1 ~ {Item:{id:potion,count:1,components:{potion_contents:{custom_color:10188866,custom_effects:[{id:instant_health,duration:1,show_particles:0b,show_icon:0b}]},custom_name:[{"text":"Hot Chocolate","italic":false}],lore:[[{"text":"Heals a tiny amount of health","italic":false}]],item_name:[{"text":"Hot Chocolate","italic":false}],consumable:{animation:drink,sound:"entity.generic.drink",has_consume_particles:0b},food:{nutrition:1,saturation:1}}}}
+        summon item ~ ~1 ~ {Item:{id:potion,count:1,components:{potion_contents:{custom_color:10188866,custom_effects:[{id:instant_health,duration:1,show_particles:0b,show_icon:0b}]},custom_name:[{"text":"Hot Chocolate","italic":false}],lore:[[{"text":"Heals a tiny amount of health","italic":false}]],item_name:[{"text":"Hot Chocolate","italic":false}],consumable:{animation:drink,sound:"entity.generic.drink",has_consume_particles:0b},food:{nutrition:1,saturation:1,can_always_eat:1b}}}}
         summon item ~ ~1 ~ {Item:{id:bucket,count:1}}
         
         function stews:cooking_complete

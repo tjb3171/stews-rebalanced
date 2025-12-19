@@ -123,15 +123,3 @@ Likely incompatible with mods or datapacks that add their own food items, howeve
 Feel free to use in any modpacks.
 
 Please don't reupload to other sites without proper credit and a link to the modrinth page.
-
----
-### Potential Future Additions
-
-<details>
-<summary>View</summary>
-
-- Add an in-game guide/achievements
-- More variety to late-game meals
-- Find a use for currently unused food (such as bread or cookies)
-
-</details>

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "eat_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:pumpkin_pie"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stews:eat_pie"
+  }
+}

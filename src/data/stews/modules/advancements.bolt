@@ -387,6 +387,36 @@ advancement stews:beetroot_soup {
     }
 }
 
+advancement stews:chorus_stew {
+    "display": {
+        "icon": {
+            "id": "minecraft:popped_chorus_fruit"
+        },
+        "title": "Temu Beacon",
+        "description": "Cook together three popped chorus fruit, a baked potato, dried kelp and a tropical fish into a boiling cauldron"
+    },
+    "parent": "stews:nether_stew",
+    "criteria": {
+        "get_soup": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:suspicious_stew",
+                        "components": {
+                            "minecraft:food": {
+                                "nutrition": 1,
+                                "saturation": 11,
+                                "can_always_eat": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+
 advancement stews:curry {
     "display": {
         "icon": {

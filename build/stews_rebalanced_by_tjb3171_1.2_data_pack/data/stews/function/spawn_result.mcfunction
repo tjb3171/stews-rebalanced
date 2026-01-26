@@ -8,3 +8,4 @@ execute as @e[type=marker, tag=cookingporkstew] at @s run function stews:spawn_r
 execute as @e[type=marker, tag=cookingmelonsoup] at @s run function stews:spawn_result/nested_execute_7
 execute as @e[type=marker, tag=cookingcurry] at @s run function stews:spawn_result/nested_execute_8
 execute as @e[type=marker, tag=cookingmuttonstew] at @s run function stews:spawn_result/nested_execute_9
+execute as @e[type=marker, tag=cookingchorusstew] at @s run function stews:spawn_result/nested_execute_10

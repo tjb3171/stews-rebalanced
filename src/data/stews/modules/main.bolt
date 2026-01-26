@@ -165,6 +165,20 @@ function stews:cook:
                 kill @e[type=item, distance=0..1, nbt={Item:{id:"minecraft:bowl"}}, limit=1]
                 kill @s
 
+    # CHORUS STEW
+    execute as @e[type=item, predicate=stews:in_water_cauldron, nbt={Item:{id:"minecraft:popped_chorus_fruit",count:3}}, distance=0..1, limit=1, sort=nearest] at @s:
+        execute as @e[predicate=stews:in_water_cauldron, type=item, nbt={Item:{id:"minecraft:baked_potato",count:1}}, distance=0..1, limit=1, sort=nearest]:
+            execute as @e[predicate=stews:in_water_cauldron, type=item, nbt={Item:{id:"minecraft:dried_kelp",count:1}}, distance=0..1, limit=1, sort=nearest]:
+                execute as @e[predicate=stews:in_water_cauldron, type=item, nbt={Item:{id:"minecraft:tropical_fish",count:1}}, distance=0..1, limit=1, sort=nearest]:
+                    playsound minecraft:block.fire.extinguish block @a ~ ~ ~ 0.5 2
+                    summon marker ~ ~ ~ {Tags:["cookingchorusstew", "cooking"]}
+                    schedule function stews:spawn_result 5s
+                    kill @e[type=item, distance=0..1, nbt={Item:{id:"minecraft:popped_chorus_fruit"}}, limit=1]
+                    kill @e[type=item, distance=0..1, nbt={Item:{id:"minecraft:baked_potato"}}, limit=1]
+                    kill @e[type=item, distance=0..1, nbt={Item:{id:"minecraft:dried_kelp"}}, limit=1]
+                    kill @e[type=item, distance=0..1, nbt={Item:{id:"minecraft:bowl"}}, limit=1]
+                    kill @s
+
 function stews:cook_bottle:
 
     # HOT CHOCOLATE
@@ -234,6 +248,10 @@ function stews:spawn_result:
 
         function stews:cooking_complete
 
+    execute as @e[type=marker, tag=cookingchorusstew] at @s:
+        summon item ~ ~1 ~ {Item:{id:suspicious_stew,count:1,components:{lore:[[{"text":"Temporarily increases mining speed","italic":false}],[{"text":"Lasts 8 mins","italic":false,"color":"gray"}]],item_name:[{"text":"Chorus Stew","italic":false}],food:{nutrition:1,saturation:11,can_always_eat:1b},consumable:{on_consume_effects:[{type:apply_effects,effects:[{id:haste,duration:9600,amplifier:1,show_particles:0b,show_icon:0b}]}]}}}}
+
+        function stews:cooking_complete
 
 function stews:spawn_result_bottle:
 

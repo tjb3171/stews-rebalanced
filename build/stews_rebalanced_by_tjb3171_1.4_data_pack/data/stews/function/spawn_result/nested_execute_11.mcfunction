@@ -1,0 +1,2 @@
+summon item ~ ~1 ~ {Item: {id: "rabbit_stew", count: 1, components: {lore: [[{text: "Heals a small amount of health", italic: false}], [{text: "Stacks up to 8", italic: false, color: "gold"}]], max_stack_size: 8, item_name: [{text: "Beef Stew", italic: false}], food: {nutrition: 1, saturation: 12, can_always_eat: 1b}, consumable: {sound: "minecraft:entity.generic.drink", on_consume_effects: [{type: "apply_effects", effects: [{id: "instant_health", duration: 1, amplifier: 1, show_particles: 0b, show_icon: 0b}]}]}}}}
+function stews:cooking_complete

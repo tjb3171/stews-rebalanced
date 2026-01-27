@@ -1,0 +1,2 @@
+summon item ~ ~1 ~ {Item: {id: "beetroot_soup", count: 1, components: {lore: [[{text: "Regenerates health rapidly", italic: false}], [{text: "Lasts for 2 mins", italic: false, color: "gray"}]], food: {nutrition: 1, saturation: 2, can_always_eat: 1b}, consumable: {sound: "minecraft:entity.generic.drink", on_consume_effects: [{type: "apply_effects", effects: [{id: "regeneration", duration: 2400, amplifier: 3, show_particles: 0b, show_icon: 0b}]}]}}}}
+function stews:cooking_complete

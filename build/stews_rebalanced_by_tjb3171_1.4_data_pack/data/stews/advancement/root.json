@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bread"
+    },
+    "title": "Cooking",
+    "description": "Cook some tasty meals",
+    "background": "minecraft:block/moss_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "get_cobble": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cobblestone"
+          }
+        ]
+      }
+    }
+  }
+}

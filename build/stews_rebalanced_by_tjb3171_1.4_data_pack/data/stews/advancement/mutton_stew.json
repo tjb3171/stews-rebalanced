@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cooked_mutton"
+    },
+    "title": "Mary had a little lamb",
+    "description": "Mix cooked mutton, a carrot, a dandelion and a bowl in a boiling cauldron"
+  },
+  "parent": "stews:obtain_carrot",
+  "criteria": {
+    "get_mutton_stew": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:rabbit_stew",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 1,
+                "saturation": 10,
+                "can_always_eat": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

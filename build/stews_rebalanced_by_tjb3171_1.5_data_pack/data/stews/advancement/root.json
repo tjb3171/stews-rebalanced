@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bread"
+    },
+    "title": {
+      "translate": "Cooking"
+    },
+    "description": {
+      "translate": "To survive, you must eat"
+    },
+    "background": "minecraft:block/moss_block",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "get_cobble": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cobblestone"
+          }
+        ]
+      }
+    }
+  }
+}

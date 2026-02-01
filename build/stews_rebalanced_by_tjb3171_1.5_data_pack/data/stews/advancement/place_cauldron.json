@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:campfire"
+    },
+    "title": {
+      "translate": "Cooking with Coal"
+    },
+    "description": {
+      "translate": "Craft a cauldron with stone slabs and place it on top of a heat source"
+    }
+  },
+  "parent": "stews:root",
+  "criteria": {
+    "place_on_heat": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "offsetY": -1,
+            "predicate": {
+              "block": {
+                "blocks": "#stews:heat_source"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

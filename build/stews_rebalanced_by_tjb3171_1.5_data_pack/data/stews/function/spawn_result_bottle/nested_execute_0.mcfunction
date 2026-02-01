@@ -1,0 +1,3 @@
+summon item ~ ~1 ~ {Item: {id: "potion", count: 1, components: {potion_contents: {custom_color: 10188866, custom_effects: [{id: "instant_health", duration: 1, show_particles: 0b, show_icon: 0b}]}, custom_name: [{translate: "Hot Chocolate", italic: false}], lore: [[{translate: "Heals a tiny amount of health", italic: false}]], item_name: [{translate: "Hot Chocolate", italic: false}], consumable: {animation: "drink", sound: "entity.generic.drink", has_consume_particles: 0b}, food: {nutrition: 1, saturation: 1, can_always_eat: 1b}}}}
+summon item ~ ~1 ~ {Item: {id: "bucket", count: 1}}
+function stews:cooking_complete

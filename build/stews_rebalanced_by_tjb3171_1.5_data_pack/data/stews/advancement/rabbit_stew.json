@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:rabbit_hide"
+    },
+    "title": {
+      "translate": "Extra Hearts"
+    },
+    "description": {
+      "translate": "Get cooked rabbit, a carrot, a baked potato, a mushroom and a bowl, and boil them together in a cauldron"
+    }
+  },
+  "parent": "stews:obtain_carrot",
+  "criteria": {
+    "get_rabbit_stew": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:rabbit_stew",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 1,
+                "saturation": 3,
+                "can_always_eat": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

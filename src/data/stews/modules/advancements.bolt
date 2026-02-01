@@ -45,8 +45,8 @@ advancement stews:root {
         "icon": {
             "id": "minecraft:bread"
         },
-        "title": "Cooking",
-        "description": "Cook some tasty meals",
+        "title": {"translate":"Cooking"},
+        "description": {"translate":"To survive, you must eat"},
         "background": "minecraft:block/moss_block",
         "show_toast": false,
         "announce_to_chat": false
@@ -70,8 +70,8 @@ advancement stews:place_cauldron {
         "icon": {
             "id": "minecraft:campfire"
         },
-        "title": "Cooking with Coal",
-        "description": "Craft a cauldron with stone slabs and place it on top of a heat source"
+        "title": {"translate":"Cooking with Coal"},
+        "description": {"translate":"Craft a cauldron with stone slabs and place it on top of a heat source"}
     },
     "parent": "stews:root",
     "criteria": {
@@ -99,8 +99,8 @@ advancement stews:mushroom_stew {
         "icon": {
             "id": "minecraft:mushroom_stew"
         },
-        "title": "Super Mushroom",
-        "description": "Throw a bowl into a cauldron full of boiling water, and add one of both types of mushrooms"
+        "title": {"translate":"Super Mushroom"},
+        "description": {"translate":"Throw a bowl into a cauldron full of boiling water, and add one of both types of mushrooms"}
     },
     "parent": "stews:place_cauldron",
     "criteria": {
@@ -129,8 +129,8 @@ advancement stews:apple_stew {
         "icon": {
             "id": "minecraft:apple"
         },
-        "title": "A Honey Bottle a Day Keeps The Dentist in Business",
-        "description": "Throw a bowl, an apple, and a honey bottle into a cauldron full of boiling water"
+        "title": {"translate":"A Honey Bottle a Day Keeps The Dentist in Business"},
+        "description": {"translate":"Throw a bowl, an apple, and a honey bottle into a cauldron full of boiling water"}
     },
     "parent": "stews:place_cauldron",
     "criteria": {
@@ -159,8 +159,8 @@ advancement stews:nether_stew {
         "icon": {
             "id": "minecraft:warped_fungus"
         },
-        "title": "Super Duper Mushroom",
-        "description": "Make a meal with one of both nether fungi and a glowberry (don't forget the bowl)"
+        "title": {"translate":"Super Duper Mushroom"},
+        "description": {"translate":"Make a meal with one of both nether fungi and a glowberry (don't forget the bowl)"}
     },
     "parent": "stews:mushroom_stew",
     "criteria": {
@@ -189,8 +189,8 @@ advancement stews:obtain_carrot {
         "icon": {
             "id": "minecraft:carrot"
         },
-        "title": "Someone's Nose",
-        "description": "Break a bush for a chance to find a carrot"
+        "title": {"translate":"Someone's Nose"},
+        "description": {"translate":"Break a bush for a chance to find a carrot"}
     },
     "parent": "stews:place_cauldron",
     "criteria": {
@@ -212,8 +212,8 @@ advancement stews:mutton_stew {
         "icon": {
             "id": "minecraft:cooked_mutton"
         },
-        "title": "Mary had a little lamb",
-        "description": "Mix cooked mutton, a carrot, a dandelion and a bowl in a boiling cauldron"
+        "title": {"translate":"Mary had a little lamb"},
+        "description": {"translate":"Mix cooked mutton, a carrot, a dandelion and a bowl in a boiling cauldron"}
     },
     "parent": "stews:obtain_carrot",
     "criteria": {
@@ -242,8 +242,8 @@ advancement stews:rabbit_stew {
         "icon": {
             "id": "minecraft:rabbit_hide"
         },
-        "title": "Extra Hearts",
-        "description": "Get cooked rabbit, a carrot, a baked potato, a mushroom and a bowl, and boil them together in a cauldron"
+        "title": {"translate":"Extra Hearts"},
+        "description": {"translate":"Get cooked rabbit, a carrot, a baked potato, a mushroom and a bowl, and boil them together in a cauldron"}
     },
     "parent": "stews:obtain_carrot",
     "criteria": {
@@ -272,8 +272,8 @@ advancement stews:pork_stew {
         "icon": {
             "id": "minecraft:cooked_porkchop"
         },
-        "title": "Health Boost",
-        "description": "Get cooked pork, a carrot, an apple, wheat and a bowl, and cook them in a cauldron"
+        "title": {"translate":"Health Boost"},
+        "description": {"translate":"Get cooked pork, a carrot, an apple, wheat and a bowl, and cook them in a cauldron"}
     },
     "parent": "stews:obtain_carrot",
     "criteria": {
@@ -302,8 +302,8 @@ advancement stews:melon_stew {
         "icon": {
             "id": "minecraft:melon_slice"
         },
-        "title": "Sweet and Stingy",
-        "description": "Boil a melon slice, a dandelion and a bowl together"
+        "title": {"translate":"Sweet and Stingy"},
+        "description": {"translate":"Boil a melon slice, a dandelion and a bowl together"}
     },
     "parent": "stews:place_cauldron",
     "criteria": {
@@ -332,8 +332,8 @@ advancement stews:seafood {
         "icon": {
             "id": "minecraft:salmon"
         },
-        "title": "Exotic Dish",
-        "description": "Mix cooked cod, cooked salmon, dried kelp, sweet berries and a bowl in a boiling cauldron"
+        "title": {"translate":"Exotic Dish"},
+        "description": {"translate":"Mix cooked cod, cooked salmon, dried kelp, sweet berries and a bowl in a boiling cauldron"}
     },
     "parent": "stews:nether_stew",
     "criteria": {
@@ -362,8 +362,8 @@ advancement stews:beetroot_soup {
         "icon": {
             "id": "minecraft:beetroot"
         },
-        "title": "Rapid Regen",
-        "description": "Put six beetroot and a bowl into a boiling cauldron"
+        "title": {"translate":"Rapid Regen"},
+        "description": {"translate":"Put six beetroot and a bowl into a boiling cauldron"}
     },
     "parent": "stews:place_cauldron",
     "criteria": {
@@ -392,8 +392,8 @@ advancement stews:chorus_stew {
         "icon": {
             "id": "minecraft:popped_chorus_fruit"
         },
-        "title": "Temu Beacon",
-        "description": "Cook together three popped chorus fruit, a baked potato, dried kelp and a tropical fish into a boiling cauldron"
+        "title": {"translate":"Temu Beacon"},
+        "description": {"translate":"Cook together three popped chorus fruit, a baked potato, dried kelp and a tropical fish into a boiling cauldron"}
     },
     "parent": "stews:nether_stew",
     "criteria": {
@@ -422,8 +422,8 @@ advancement stews:curry {
         "icon": {
             "id": "minecraft:blaze_powder"
         },
-        "title": "Heated Debate",
-        "description": "Mix blaze powder with a baked potato, sweet berry, golden carrot, and chicken, and add a bowl to the cauldron"
+        "title": {"translate":"Heated Debate"},
+        "description": {"translate":"Mix blaze powder with a baked potato, sweet berry, golden carrot, and cooked chicken, and add a bowl to the cauldron"}
     },
     "parent": "stews:nether_stew",
     "criteria": {
@@ -452,8 +452,8 @@ advancement stews:beef_stew {
         "icon": {
             "id": "minecraft:cooked_beef"
         },
-        "title": "Beefy",
-        "description": "Mix steak, an egg, glowberries and wheat, and a bowl, in a boiling cauldron"
+        "title": {"translate":"Beefy"},
+        "description": {"translate":"Mix steak, an egg, glowberries and wheat, and a bowl, in a boiling cauldron"}
     },
     "parent": "stews:mushroom_stew",
     "criteria": {
@@ -487,8 +487,8 @@ advancement stews:hot_chocolate {
                 }
             }
         },
-        "title": "Quality Hot Chocolate",
-        "description": "Boil together cocoa beans, sugar, a milk bucket, and a glass bottle."
+        "title": {"translate":"Quality Hot Chocolate"},
+        "description": {"translate":"Boil together cocoa beans, sugar, a milk bucket, and a glass bottle."}
     },
     "parent": "stews:place_cauldron",
     "criteria": {
@@ -523,8 +523,8 @@ advancement stews:pumpkin_pie {
         "icon": {
             "id": "minecraft:pumpkin_pie"
         },
-        "title": "A Sweet Snack",
-        "description": "Craft a pumpkin pie"
+        "title": {"translate":"A Sweet Snack"},
+        "description": {"translate":"Craft a pumpkin pie"}
     },
     "parent": "stews:root",
     "criteria": {

@@ -1,2 +1,0 @@
-summon item ~ ~1 ~ {Item: {id: "suspicious_stew", count: 1, components: {lore: [[{text: "Temporarily increases mining speed", italic: false}], [{text: "Lasts 8 mins", italic: false, color: "gray"}]], item_name: [{text: "Chorus Stew", italic: false}], food: {nutrition: 1, saturation: 11, can_always_eat: 1b}, consumable: {on_consume_effects: [{type: "apply_effects", effects: [{id: "haste", duration: 9600, amplifier: 1, show_particles: 0b, show_icon: 0b}]}]}}}}
-function stews:cooking_complete

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:warped_fungus"
+    },
+    "title": {
+      "translate": "Super Duper Mushroom"
+    },
+    "description": {
+      "translate": "Make a meal with one of both nether fungi and a glowberry (don't forget the bowl)"
+    }
+  },
+  "parent": "stews:mushroom_stew",
+  "criteria": {
+    "get_nether_stew": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:suspicious_stew",
+            "components": {
+              "minecraft:food": {
+                "nutrition": 1,
+                "saturation": 4,
+                "can_always_eat": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

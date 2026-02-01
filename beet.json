@@ -2,13 +2,13 @@
     "name": "Stews Rebalanced - by tjb3171",
     "description": "A datapack that adds a cooking system to rebalance hunger mechanics",
     "author": "tjb3171",
-    "version": "1.4",
+    "version": "1.5",
     "require": [
         "bolt"
     ],
     "data_pack": {
         "load": ["src"],
-        "description": "🍖 §6§lStews Rebalanced v1.4§d -{ 1.21.11 }- §7by tjb3171",
+        "description": "🍖 §6§lStews Rebalanced v1.5§d -{ 1.21.11 }- §7by tjb3171",
         "pack_format": 94,
         "min_format": [92, 0],
         "max_format": [94, 1],
@@ -28,6 +28,14 @@
                 }
             ]
         }
+    },
+    "resource_pack": {
+        "load": ["src_rp"],
+        "description": "🍖 §6§lStews Rebalanced §7Translation Pack v1.5§d -{ 1.21.11 }-",
+        "pack_format": 75,
+        "min_format": 55,
+        "max_format": 75,
+        "name": "stews_rebalanced_translation_rp"
     },
     "pipeline": ["mecha"],
     "output": "build",
